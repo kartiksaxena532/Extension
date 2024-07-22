@@ -31,7 +31,9 @@ Building this chrome extension with the latest design trend inspired from the ja
 
 
 
-## Screenshots
+## Layout design.
+![Screenshot 2024-07-22 202548](https://github.com/user-attachments/assets/2a9cadc5-73b7-4b65-bcf8-cd8866126965)
+
 
 
 
