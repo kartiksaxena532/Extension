@@ -21,14 +21,14 @@ const Pomodoro = () => {
   const seconds = timeLeft % 60;
 
   return (
-    <div className="widget bg-red-400 h-full rounded-md">
+    <div className="widget bg-red-400 h-full rounded-xl">
       <div className="flex items-center space-x-4 flex-col gap-10 w-full">
         <span className="text-lg text-white ">Pomodoro</span>
         <span className="text-2xl font-bold">{`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`}</span>
-        <button onClick={() => setIsRunning(!isRunning)} className="px-4 py-2 bg-white text-black rounded w-20">
+        <button onClick={() => setIsRunning(!isRunning)} className="px-4 py-2 bg-white text-black rounded w-52">
           {isRunning ? 'Stop' : 'Start'}
         </button>
-        <button onClick={() => setTimeLeft(25 * 60)} className="px-4 py-2 bg-red-500 text-white rounded w-20">Reset</button>
+        <button onClick={() => setTimeLeft(25 * 60)} className="px-4 py-2 bg-red-500 text-white rounded w-52">Reset</button>
       </div>
     </div>
   );

@@ -10,22 +10,27 @@ body {
 }
 
 body {
-  background-color: rgb(36, 36, 36);
-}
+  background: hsla(0, 0%, 0%, 1);
 
+background: radial-gradient(circle, hsla(0, 0%, 0%, 1) 9%, hsla(247, 60%, 21%, 1) 54%);
+
+background: -moz-radial-gradient(circle, hsla(0, 0%, 0%, 1) 9%, hsla(247, 60%, 21%, 1) 54%);
+
+background: -webkit-radial-gradient(circle, hsla(0, 0%, 0%, 1) 9%, hsla(247, 60%, 21%, 1) 54%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#1C1554", GradientType=1 );
+}
 .container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1.2fr 1fr 1fr 0.8fr;
   gap: 10px 10px;
   grid-auto-flow: row;
   grid-template-areas:
-    "Google-slides Google-slides Pomodoro"
+    "slides keep Pomodoro"
     "Forma Spreadsheet Spreadsheet"
     "Forma Quote Poll"
-    "Steps gOOGLE-MEET Google-Calender";
+    "Steps google-meet Google-Calender";
 }
-
-.Google-slides { grid-area: Google-slides; }
 
 .Pomodoro { grid-area: Pomodoro; }
 
@@ -41,4 +46,8 @@ body {
 
 .Google-Calender { grid-area: Google-Calender; }
 
-.gOOGLE-MEET { grid-area: gOOGLE-MEET; }
+.slides { grid-area: slides; }
+
+.keep { grid-area: keep; }
+
+.google-meet { grid-area: google-meet; }

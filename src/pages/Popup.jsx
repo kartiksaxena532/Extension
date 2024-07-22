@@ -9,6 +9,7 @@ export default function() {
     <p className='text-center text-7xl text-white'>Digital Notice Board</p>
     <div class="container mt-10 ">
   <div class="Google-slides rounded-md"><GoogleSlides/></div>
+  <div class="keep"></div>
   <div class="Pomodoro rounded-md"><Pomodoro/></div>
   <div class="Spreadsheet"></div>
   <div class="Forma"></div>
