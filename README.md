@@ -2,8 +2,6 @@
 # Digital Notice Board
  A chrome extension to make a custom notice board for collaboration with your peers on the go having various features to interact in a fun way.
 
-
- 
 ## Installation
 
 git clone "the repo link" ./ 
@@ -17,7 +15,7 @@ Install my-project with npm
     
 ## Documentation
 
-Tech stack used : 
+# Tech stack used : 
 
 Vite-web-extension Framework + Tailwind Css + Expressjs
 
@@ -34,8 +32,52 @@ Building this chrome extension with the latest design trend inspired from the ja
 ## Layout design.
 ![Screenshot 2024-07-22 202548](https://github.com/user-attachments/assets/2a9cadc5-73b7-4b65-bcf8-cd8866126965)
 
+## Layout CSS.
+```
+body {
+  background: hsla(0, 0%, 0%, 1);
 
+background: radial-gradient(circle, hsla(0, 0%, 0%, 1) 9%, hsla(247, 60%, 21%, 1) 54%);
 
+background: -moz-radial-gradient(circle, hsla(0, 0%, 0%, 1) 9%, hsla(247, 60%, 21%, 1) 54%);
+
+background: -webkit-radial-gradient(circle, hsla(0, 0%, 0%, 1) 9%, hsla(247, 60%, 21%, 1) 54%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#1C1554", GradientType=1 );
+}
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1fr 1fr 0.8fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "slides keep Pomodoro"
+    "Forma Spreadsheet Spreadsheet"
+    "Forma Quote Poll"
+    "Steps google-meet Google-Calender";
+}
+
+.Pomodoro { grid-area: Pomodoro; }
+
+.Spreadsheet { grid-area: Spreadsheet; }
+
+.Forma { grid-area: Forma; }
+
+.Quote { grid-area: Quote; }
+
+.Poll { grid-area: Poll; }
+
+.Steps { grid-area: Steps; }
+
+.Google-Calender { grid-area: Google-Calender; }
+
+.slides { grid-area: slides; }
+
+.keep { grid-area: keep; }
+
+.google-meet { grid-area: google-meet; }
+
+```
 
 ## Usage/Examples
 
