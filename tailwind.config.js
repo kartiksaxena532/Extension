@@ -8,6 +8,7 @@ export default {
       // Some useful comment
       fontFamily: {
         'nunito': ['nunito', 'sans-serif'],
+        
     },
   },
     extend: {},
