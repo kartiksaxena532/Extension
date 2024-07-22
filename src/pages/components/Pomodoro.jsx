@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Pomo from '/images/pomodoro.png';
 
 const Pomodoro = () => {
   const [timeLeft, setTimeLeft] = useState(25 * 60);
@@ -22,13 +23,13 @@ const Pomodoro = () => {
 
   return (
     <div className="widget bg-red-400 h-full rounded-xl">
-      <div className="flex items-center space-x-4 flex-col gap-10 w-full">
-        <span className="text-lg text-white ">Pomodoro</span>
-        <span className="text-2xl font-bold">{`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`}</span>
-        <button onClick={() => setIsRunning(!isRunning)} className="px-4 py-2 bg-white text-black rounded w-52">
-          {isRunning ? 'Stop' : 'Start'}
+      <div className="flex items-center space-x-4 flex-col gap-5 w-full">
+        <span className="text-3xl font-extrabold mt-5 flex gap-2 text-white space-grotesk "><img src={Pomo} alt="Pomodoro" className="w-8 h-8 mb-3" />Pomodoro</span>
+        <span className="text-7xl font-extrabold text-white mt-2">{`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`}</span>
+        <button onClick={() => setIsRunning(!isRunning)} className="px-4 py-1 text-bold text-xl bg-white text-black rounded w-60 h-10 ring-1 ring-black">
+          {isRunning ? 'STOP' : 'START'}
         </button>
-        <button onClick={() => setTimeLeft(25 * 60)} className="px-4 py-2 bg-red-500 text-white rounded w-52">Reset</button>
+        <button onClick={() => setTimeLeft(25 * 60)} className="px-4 py-1 text-bold text-xl bg-red-600 text-white rounded w-60 h-10 ring-1 ring-gray-400 ">RESET</button>
       </div>
     </div>
   );
