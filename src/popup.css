@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  width:100%;
+  height: 100%;
+  padding: 40;
+  margin:40;
+}
+
+body {
+  background-color: rgb(36, 36, 36);
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1fr 1fr 0.8fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Google-slides Google-slides Pomodoro"
+    "Forma Spreadsheet Spreadsheet"
+    "Forma Quote Poll"
+    "Steps gOOGLE-MEET Google-Calender";
+}
+
+.Google-slides { grid-area: Google-slides; }
+
+.Pomodoro { grid-area: Pomodoro; }
+
+.Spreadsheet { grid-area: Spreadsheet; }
+
+.Forma { grid-area: Forma; }
+
+.Quote { grid-area: Quote; }
+
+.Poll { grid-area: Poll; }
+
+.Steps { grid-area: Steps; }
+
+.Google-Calender { grid-area: Google-Calender; }
+
+.gOOGLE-MEET { grid-area: gOOGLE-MEET; }
