@@ -5,6 +5,10 @@
 ## Installation
 
 git clone "the repo link" ./ 
+then do "git checkout -b "your branch name"
+then git add .
+git commit -m "message"
+git push
 
 Install my-project with npm
 
