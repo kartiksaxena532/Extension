@@ -1,30 +1,15 @@
 import React, { useState } from 'react';
 
 const MeetingWidget = () => {
-  const [service, setService] = useState('google-meet');
-
-  const handleToggle = () => {
-    setService((prevService) => (prevService === 'google-meet' ? 'microsoft-teams' : 'google-meet'));
-  };
 
   return (
-    <div className="meeting-widget">
-      <button onClick={handleToggle} className="toggle-button">
-        Toggle to {service === 'google-meet' ? 'Microsoft Teams' : 'Google Meet'}
-      </button>
-      {service === 'google-meet' ? (
+    <div className="rounded-md">
         <iframe
-          src="https://meet.google.com/"
+          src="https://calendly.com/kartuserstudy532/30min"
           title="Google Meet"
-          style={{ width: '100%', height: '600px', border: 'none' }}
+          style={{ width: '940px', height: '600px', border: 'none' }}
+          className="rounded-md"
         ></iframe>
-      ) : (
-        <iframe
-          src="https://teams.microsoft.com/"
-          title="Microsoft Teams"
-          style={{ width: '100%', height: '600px', border: 'none' }}
-        ></iframe>
-      )}
     </div>
   );
 };
