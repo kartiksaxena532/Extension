@@ -2,11 +2,11 @@ import React from 'react';
 
 const GoogleKeep = () => {
   return (
-    <div className="google-keep-container">
+    <div className="google-keep-container bg-white rounded-xl">
       <iframe
-        src="https://keep.google.com/"
-        title="Google Keep"
-        style={{ width: '100%', height: '600px', border: 'none' }}
+        src="https://quicknote.io/"
+        title="Notes"
+        style={{ width: '440px', height: '315px', border: 'none', overflow:'hidden'}}
       ></iframe>
     </div>
   );
