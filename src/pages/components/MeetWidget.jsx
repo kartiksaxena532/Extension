@@ -7,7 +7,7 @@ const MeetingWidget = () => {
         <iframe
           src="https://calendly.com/kartuserstudy532/30min"
           title="Google Meet"
-          style={{ width: '940px', height: '600px', border: 'none' }}
+          style={{ width: '450px', height: '600px', border: 'none' }}
           className="rounded-md"
         ></iframe>
     </div>

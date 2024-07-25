@@ -8,6 +8,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@mui/material": "^5.16.5",
     "lucide-react": "^0.414.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
