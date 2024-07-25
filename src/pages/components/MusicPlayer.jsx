@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Youtube from '/images/Youtube.png'
+import Spotify from '/images/Spotify.png'
 
 const MusicPlayer = () => {
   const [service, setService] = useState('spotify');
@@ -10,7 +12,7 @@ const MusicPlayer = () => {
   return (
     <div className="music-player">
       <button onClick={handleToggle} className="text-white text-bold rounded-lg ">
-      {service === 'spotify' ? <button className="rounded-md bg-red-600 ring-4 ring-white h-10 w-32  text-center mb-10 py-3 px-9 flex">Youtube</button>: <div className=" -mt-3 absolute rounded-md bg-green-400 ring-4  w-32 ring-white h-10 py-3">Spotify</div>}
+      {service === 'spotify' ? <button className="rounded-md bg-white ring-4 ring-white h-10 w-28 text-center mb-10 px-2 flex"><img className='ml-3 w-26 h-10' src={Youtube} alt="chatgpt"/></button>: <div className=" absolute rounded-md bg-white ring-4 ring-white h-10 w-28 flex"><img className='ml-3 h-26 ' src={Spotify} alt="chatgpt"/></div>}
       </button>
       {service === 'spotify' ? (
         <iframe
