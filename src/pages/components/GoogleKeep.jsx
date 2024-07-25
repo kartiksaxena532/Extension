@@ -6,7 +6,8 @@ const GoogleKeep = () => {
       <iframe
         src="https://quicknote.io/"
         title="Notes"
-        style={{ width: '440px', height: '315px', border: 'none', overflow:'hidden'}}
+        style={{ width: '445px', height: '500px', border: 'none'}}
+        
       ></iframe>
     </div>
   );

@@ -1,8 +1,10 @@
 import React from 'react';
+import Meet from '/images/meet.png'
 
 const GoogleMeetWidget = ({ meetLink, handleInputChange, joinMeeting, error }) => {
   return (
     <div className="w-72 bg-white gap-2 pt-2 px-3 shadow-md rounded-full flex flex-row justify-between items-center">
+       <img src={Meet} alt="Pomodoro" className="w-8 h-8 mb-3" />
       <input
         type="text"
         placeholder="Google Meet Link"

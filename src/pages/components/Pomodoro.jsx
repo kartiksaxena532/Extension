@@ -46,8 +46,8 @@ const Pomodoro = () => {
   const seconds = timeLeft % 60;
 
   return (
-    <div className="widget bg-red-400 rounded-xl">
-      <div className="flex items-center space-x-4 flex-col gap-5 w-full">
+    <div className="widget bg-gradient-to-b from-[#7df3fdbc] to-[#6E94DC] rounded-xl">
+      <div className="flex items-center  flex-col gap-5 w-full">
         <span className="text-3xl font-extrabold mt-5 flex gap-2 text-white space-grotesk ">
           <img src={Pomo} alt="Pomodoro" className="w-8 h-8 mb-3" />Pomodoro
         </span>
@@ -55,7 +55,7 @@ const Pomodoro = () => {
         <button onClick={handleButtonClick} className="px-4 py-1 text-bold text-xl bg-white text-black rounded w-60 h-10 ring-1 ring-black">
           {isRunning ? 'Stop' : 'Start'}
         </button>
-        <button onClick={handleReset} className="px-4 py-1 mb-4 text-bold text-xl bg-red-600 text-white rounded w-60 h-10 ring-1 ring-gray-400 ">
+        <button onClick={handleReset} className="px-4 py-1 mb-6 text-bold text-xl bg-red-600 text-white rounded w-60 h-10 ring-1 ring-gray-400 ">
           Reset
         </button>
       </div>
