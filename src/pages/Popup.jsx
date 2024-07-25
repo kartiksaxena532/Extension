@@ -24,7 +24,8 @@ export default function() {
         <div
           key={i}
           className={`row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 dark:bg-neutral-900 ${
-           ( i === 3) ? "col-span-2 h-80 " : ( i === 5 || i === 6) ? " h-[605px] col-span-1 mb-6" : " "
+           ( i === 3 ) ? "col-span-2 h-80 bg-gradient-to-r from-blue-200 to-cyan-200 " : ( i === 5 || i === 6) ? " h-[605px] col-span-1 mb-6 dark:bg-gradient-to-r from-blue-200 to-cyan-200" : 
+           ( i === 2 ) ? " dark:bg-gradient-to-r from-indigo-400 to-cyan-400" :''
           }  `}
         >
           {i === 0 && <GoogleSlides />}
