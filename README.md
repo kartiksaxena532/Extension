@@ -1,6 +1,7 @@
 
 # Digital Notice Board
  A chrome extension to make a custom notice board for collaboration with your peers on the go having various features to interact in a fun way.
+Loom Link for proejct demo
 
 ## Installation
 
