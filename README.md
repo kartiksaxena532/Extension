@@ -1,5 +1,5 @@
 
-# Digital Notice Board
+# Collab Board📱
  A chrome extension to make a custom notice board for collaboration with your peers on the go having various features to interact in a fun way.
 Loom Link for proejct demo
 <a href="https://www.loom.com/share/c6d94e9e3f5641b0a2fccfc7c0af4cd6?sid=11758b1e-00e4-4cba-9cbf-fca0b5fe51c0" target="_blank">Project Demo</a>
