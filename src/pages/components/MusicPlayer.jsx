@@ -18,7 +18,7 @@ const MusicPlayer = () => {
         <>
         <iframe
           src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"
-          width="445"
+          width="455"
           height="350"
           frameBorder="0"
           allowtransparency="true"
